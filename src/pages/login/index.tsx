@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 const login = () => {
 	return (
-		<div className="bg-white h-screen flex items-center justify-center">
+		<div className="bg-white h-screen flex items-center justify-center overflow-hidden">
 			<div className="grid grid-cols-1 lg:grid-cols-2 gap-10 max-w-7xl w-full">
 					
 				<div className="flex flex-col gap-10 items-left justify-start px-8 py-[8vh] lg:px-16">

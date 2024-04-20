@@ -7,13 +7,14 @@ const login = () => {
 					
 				<div className="flex flex-col gap-10 items-left justify-start px-8 py-[8vh] lg:px-16">
 					<span className="text-black font-bold text-2xl md:text-3xl w-full sm:w-2/3 sm:text-center">Access Your Account</span>
-
+					<Link href={'/login'}>
 					<div className="rounded-lg border-2 border-solid border-gray-200 w-full lg:w-2/3">
 						<div className="flex flex-row items-center justify-center gap-4 py-2 px-10">
 							<Image src={'/images/google.png'} alt="google" width={30} height={30} />
 							<span className="text-black">Sign in with Google</span>
 						</div>
 					</div>
+					</Link>
 					<div className="relative flex flex-row items-center w-full lg:w-2/3">
 						<div className="flex-grow border-b border-gray-400"></div>
 						<span className="flex-shrink mx-2 text-gray-400">OR</span>
@@ -30,11 +31,12 @@ const login = () => {
 							<input
 								className="w-full h-12 rounded-lg border-2 border-solid border-gray-200 px-4 text-left text-black placeholder-gray-400"
 								placeholder="Password"
+								type="password"
 							/>
 						</div>
 						<div className="flex flex-row items-center justify-between px-0">
-							<span className="text-black">Remember Me</span>
-							<span className="text-black">Forgot Password?</span>
+						<Link href={'/login'}><span className="text-black">Remember Me</span></Link>
+						<Link href={'/login'}><span className="text-black">Forgot Password?</span></Link>
 						</div>
 					</div>
 
